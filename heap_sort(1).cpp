@@ -1,6 +1,4 @@
-//In this file we will try to implement insertion sort
-#define SIZE_MAX 50001
-#define RAND_MAX 32568
+//In this file we will try to implement heap sort
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -73,23 +71,9 @@ void maxHeapify(vector<int> &vect, int heapSize, int i)
 	}
 }
 
-/*void bad_func(vector<int> vect)
-{
-vect.push_back(30);
-}
-void good_func(vector<int> &vect)
-{
-vect.push_back(30);
-}*/
-
-
-
 int main() {
-	srand(time(NULL));
 	vector<int> v = { 3,44,5,47,15,36,26,27,2,46 };
-	/*for (int i : v) { //This print the entire contents of the vector
-		cout << i << ', ';
-	}*/
+	
 	cout << "Array before sorted: "; 
 	for (int i = 0; i < v.size(); i++)
 	{
@@ -105,34 +89,3 @@ int main() {
 
 	return 0;
 }
-
-//cout << v.size() << endl;
-//v.resize(9);
-//cout << v.size() << endl;
-/*for (int i : v) { //This print the entire contents of the vector
-//cout << i << endl;
-}*/
-
-/*for (int i = 0; i<v.size(); i++) {
-v[i] = rand() % RAND_MAX;
-cout << v[i] << endl;
-}*/
-
-//alternate version
-/*for (int i=0;i<v.size();i++){
-cout << v[i]; << endl;
-}*/
-//insertion_sort(v);
-
-
-
-/*bad_func(v);
-for (int i : v) { //done to demonstrate that to change the value of the vector, you must pass by reference
-cout << i << endl;
-
-}
-good_func(v);
-for (int i : v) { //done to demonstrate that to change the value of the vector, you must pass by reference
-cout << i << endl;
-
-}*/
