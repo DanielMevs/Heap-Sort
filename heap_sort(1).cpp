@@ -14,7 +14,7 @@ int left(int i);
 int right(int i);
 
 int parent(int i) {
-	return (i / 2);
+	return (i - 1) / 2;
 }
 int left(int i) {
 	return((2*i) + 1);
